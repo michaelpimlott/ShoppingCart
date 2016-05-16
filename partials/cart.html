@@ -1,0 +1,32 @@
+
+
+<div class="container">
+  <div class="row">
+    <div>
+      <h3 class='total'>Order total: {{orderTotal}}</h3>
+    </div>
+  </div>
+</div>
+
+<table class='table table-bordered'>
+  <thead>
+    <th>Product</th>
+    <th>Quantity</th>
+    <th>Sub-total</th>
+  </thead>
+  <tbody ng-repeat='item in cart'>
+    <td>
+      <p><strong class='name'>{{item.name}}</strong></p>
+      <p><img ng-src='{{item.imageUrl}}'></p>
+      <p><strong>Caffeine Scale:</strong> {{item.caffeineScale}}</p>
+      <p><strong>Ingredients:</strong> {{item.ingredients}}</p>
+      <p><strong>Rating:</strong> {{item.rating}}</p>
+    </td>
+    <td ng-hide='showQuantity'>{{item.qty}}</td>
+    <td ng-show='editQuantity'><input type="text" ng-model='teaQuantity' placeholder='{{item.qty}}'></td>
+    <td>{{(item.price * item.qty)/100 | currency}}</td>
+    <td>
+      <button class="btn btn-danger" type="submit" ng-click='removeItem($index)'>Remove</button>
+    </td>
+  </tbody>
+</table>

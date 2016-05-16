@@ -1,0 +1,38 @@
+body{
+  padding:20px;
+}
+
+.welcome {
+  color: #FA7F58;
+  font-weight: bold;
+  font-size: 50px;
+  padding-left: 50px;
+}
+
+#nav {
+  background-color: #F8F6F8;
+}
+
+.pic {
+  max-width: 250px;
+}
+
+.stuff {
+  display: flex;
+  flex-direction: column;
+}
+
+.tea-name {
+  display: flex;
+  flex-direction: row;
+}
+
+.name {
+  font-size: 30px;
+}
+
+.pull-right {
+  padding-left:500px;
+
+
+}
