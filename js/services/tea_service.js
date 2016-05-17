@@ -2,7 +2,7 @@ app.service('teaService', ['$http', function ($http) {
   var cart = [];
 
   return {
-    getTea: function () {
+     getTea: function () {
       return $http.get('../../tea.json');
     },
 
@@ -12,12 +12,12 @@ app.service('teaService', ['$http', function ($http) {
       return cart;
     },
 
-    getItems: function () {
-      return cart;
-    },
-
     removeItem: function(item) {
       cart.splice(item, 1);
+    },
+
+    getItems: function () {
+      return cart;
     },
 
     orderTotal: function(item) {

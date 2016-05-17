@@ -2,7 +2,7 @@ body{
   padding:20px;
 }
 
-.welcome {
+.title {
   color: #FA7F58;
   font-weight: bold;
   font-size: 50px;
@@ -14,7 +14,7 @@ body{
 }
 
 .pic {
-  max-width: 250px;
+  max-width: 300px;
 }
 
 .stuff {
@@ -33,6 +33,4 @@ body{
 
 .right {
   padding-left:400px;
-
-
 }
